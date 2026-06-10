@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática 5</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+<style>
+    form{
+        align-items: center;
+        margin: 20px;
+        padding: 15px;
+        color: darkgrey;
+    }
+    .secondary{
+        align-items: center;
+        text-align: center;
+        background-color: darkgrey;
+        margin: 20px;
+        padding: 15px;
+    }
+    .email{
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        margin: 20px;
+        padding: 15px;
+        text-decoration-color: white;
+    }
+    .senha{
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        margin: 20px;
+        padding: 15px;
+        text-decoration-color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <form action="feed.html" method="get">
+            <label for="email">E-mail</label>
+            <input id="email" class="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha</label>
+            <input id="senha" class="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+
+            <button class="secondary" type="submit">Entrar</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 1rem;">
+            <a href="#">Esqueceu sua senha?</a>
+        </p>
+
+        <p style="text-align: center; margin-top: 0.5rem;">Não tem uma conta?</p>
+        <p style="text-align: center;">
+            <a href="cadastro.html">Cadastre-se</a>
+        </p>
+    </div>
+</body>
+</html>

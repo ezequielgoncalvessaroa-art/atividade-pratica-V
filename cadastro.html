@@ -4,26 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    <style>
+        :root {
+            --pico-primary: #2563eb;
+            --pico-primary-hover: #1d4ed8;
+            --pico-primary-focus: rgba(37, 99, 235, 0.25);
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(
+                135deg,
+                #1e3a8a 0%,
+                #2563eb 50%,
+                #3b82f6 100%
+            );
+            padding: 2rem;
+        }
+
+        main.container {
+            max-width: 520px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        input,
+        select {
+            border-radius: 12px !important;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 1rem;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .login-link a {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 576px) {
+            body {
+                padding: 1rem;
+            }
+
+            main.container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <main class="container">
-        <h1>Cadastro</h1>
+
+        <h1>Crie sua conta</h1>
+        <p class="subtitle">
+            Preencha os dados abaixo para se cadastrar.
+        </p>
+
         <form action="feed.html" method="get">
+
             <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" placeholder="Digite seu nome" required>
+            <input
+                id="nome"
+                name="nome"
+                type="text"
+                placeholder="Digite seu nome"
+                required
+            >
 
             <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
 
             <label for="usuario">Usuário</label>
-            <input id="usuario" name="usuario" type="text" placeholder="Escolha um nome de usuário" required>
+            <input
+                id="usuario"
+                name="usuario"
+                type="text"
+                placeholder="Escolha um nome de usuário"
+                required
+            >
 
             <label for="senha">Senha</label>
-            <input id="senha" name="senha" type="password" minlength="6" placeholder="Digite sua senha" required>
+            <input
+                id="senha"
+                name="senha"
+                type="password"
+                minlength="6"
+                placeholder="Digite sua senha"
+                required
+            >
 
             <label for="confirma-senha">Confirmação de senha</label>
-            <input id="confirma-senha" name="confirma-senha" type="password" minlength="6" placeholder="Repita sua senha" required>
+            <input
+                id="confirma-senha"
+                name="confirma-senha"
+                type="password"
+                minlength="6"
+                placeholder="Repita sua senha"
+                required
+            >
 
             <label for="genero">Gênero</label>
             <select id="genero" name="genero" required>
@@ -35,15 +156,26 @@
                 <option value="prefiro-nao-dizer">Prefiro não dizer</option>
             </select>
 
-            <label for="nascimento">Data de Nascimento</label>
-            <input id="nascimento" name="nascimento" type="date" required>
+            <label for="nascimento">Data de nascimento</label>
+            <input
+                id="nascimento"
+                name="nascimento"
+                type="date"
+                required
+            >
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit">
+                Criar Conta
+            </button>
+
         </form>
 
-        <p style="text-align: center; margin-top: 1rem;">
-            <a href="index.html" class="contrast">Já possuo uma conta</a>
-        </p>
+        <div class="login-link">
+            <a href="index.html">
+                Já possuo uma conta
+            </a>
+        </div>
+
     </main>
 </body>
 </html>

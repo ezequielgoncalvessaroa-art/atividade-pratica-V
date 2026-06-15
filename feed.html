@@ -19,16 +19,19 @@
             gap: 1rem;
             align-items: center;
         }
-        .avatar {
+       .avatar {
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
-            background-color: #777;
-            display: inline-flex;
+            overflow: hidden;
+            display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: bold;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .post-card {
             border: 1px solid #ddd;
@@ -69,8 +72,8 @@
             <div class="post-header">
                 <span class="avatar"><img src="img/avatar.jpg.webp" alt="Avatar"></span>
                 <div class="post-meta">
-                    <strong>Ryan Brito</strong>
-                    <span>@ryanbrito</span>
+                    <strong>João Martins</strong>
+                    <span>@joaomartins</span>
                 </div>
             </div>
             <label for="new-post" class="visually-hidden">Escreva seu post</label>
@@ -85,8 +88,8 @@
                 <div class="post-header">
                     <span class="avatar"><img src="img/avatar.jpg.webp" alt="Avatar"></span>
                     <div class="post-meta">
-                        <strong>Luis Eduardo Lages</strong>
-                        <span>@luiseduardolages</span>
+                        <strong>Carlos Ferreira</strong>
+                        <span>@carlosferreira</span>
                     </div>
                 </div>
                 <p>Hoje quase morri no trabalho de framework</p>
@@ -100,8 +103,8 @@
                 <div class="post-header">
                     <span class="avatar"><img src="img/avatar.jpg.webp" alt="Avatar"></span>
                     <div class="post-meta">
-                        <strong>Ezequiel Gonçalves</strong>
-                        <span>@ezequielgoncalves</span>
+                        <strong>Gabriel Oliveira</strong>
+                        <span>@gabrioliveira</span>
                     </div>
                 </div>
                 <p>Quero ir pra casa! Não sobrou nada</p>
